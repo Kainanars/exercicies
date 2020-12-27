@@ -33,14 +33,40 @@ const cidades = [{
     "populacao": 3000
     }];
 
-    function cidadesPorEstado(estado) {
-        for (i = 0; i <= estado; i++ ){
-            if(estado[i].estado == estado){
-                console.log(estado[i].nome);
-                return estado[i].nome;
-            }else{
-                return console.log("Ainda não há cidades cadastradas para esse estado!! :(")
+
+    
+    function cidadesPorEstado(states) {
+        
+        for (i = 0; i < cidades.length; i++ ){
+            if (cidades[i].estado === states){
+                console.log(cidades[i].nome);
             }
         }
       };
       cidadesPorEstado('SP') // retorna ["São Paulo", "Santo André"] 
+
+    function cidadesPorIntervaloDePopulacao(populacao_minimo, populacao_maximo) {
+
+        for (i = 0; i < cidades.length; i++ ){
+            if (cidades[i].populacao >= populacao_minimo && cidades[i].populacao <= populacao_maximo){
+                console.log(cidades[i].nome);
+            }
+        }
+      
+    };
+
+    cidadesPorIntervaloDePopulacao(1000, 9000) // retorna ["Macaé", "Santo André", "Porto Seguro"]  
+
+
+    function informativoCidade(cidade) {
+        
+        for (i = 0; i < cidades.length; i++ ){
+            if (cidades[i].nome == cidade ){
+                console.log(`Informativo de ${cidades[i].nome}: cidade que fica no ${cidades[i].estado} e possui ${cidades[i].populacao} habitantes. `);
+            }
+        }
+
+      };
+
+      informativoCidade('Macaé') // retorna 'Informativo de Macaé: cidade que fica no Rio de Janeiro e possui 3000 habitantes'
+  
