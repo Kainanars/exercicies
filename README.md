@@ -26,6 +26,8 @@ Exercícios DH
     }
     foraDaSequencia([1, 2, 3, 4, 5, 6, 20, 7, 8, 9]) //retorna 20
 
+    COMPLETO---------------------------------------
+
   3) Crie uma função que receba por parâmetro uma string e a retorne revertido
   
   Exemplo: roma - O valor a ser retornado deve ser: amor 
@@ -49,6 +51,7 @@ Exercícios DH
     }
     calculaFatorial(6) //retorna 720
    
+    COMPLETO---------------------------------------
    
   5) Com o array de objetos de cidades descrito abaixo, precisamos extrair alguns relatórios:
   
@@ -107,3 +110,5 @@ Exercícios DH
       // escreva sua função aqui
     }
     informativoCidade('Macaé') // retorna 'Informativo de Macaé: cidade que fica no Rio de Janeiro e possui 3000 habitantes'
+
+    COMPLETO---------------------------------------
